@@ -11,7 +11,9 @@
 
 ## Useful links
 [Хорошая книга по основам Java](https://vk.com/wall-54530371_1604)
+
 [Экспресс курс-шпаргалка](http://developer.alexanderklimov.ru/android/java/java.php)
+
 [Дженерики](http://www.quizful.net/post/java-generics-tutorial)
 
 ## Домашнее задание
