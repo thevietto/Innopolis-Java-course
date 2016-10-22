@@ -3,12 +3,11 @@
 ## План
 
 * Многопоточность в Java
-* Класс Thread, интерфейс Runnable
-* sycnronized blocks
-* join, wait, notify, notifyAll
-* Dead Lock, Live Lock, Race conditions
-* volatile
-
+  * Класс Thread, интерфейс Runnable
+  * sycnronized blocks
+  * join, wait, notify, notifyAll
+  * Dead Lock, Live Lock, Race conditions
+  * volatile
 * Sockets
 
 ## Домашнее задание
