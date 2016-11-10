@@ -1,4 +1,4 @@
-# HTTP, Servlets, Cookies, Session
+# HTTP, Servlets, Filters, Cookies, Session
 
 ## План
 
@@ -8,6 +8,7 @@
 * JSTL
 * Cookies
 * Session
+* Servlet Filters
 
 ## Домашнее задание
 
