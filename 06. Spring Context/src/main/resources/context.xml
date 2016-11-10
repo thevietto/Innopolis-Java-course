@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean id="oleg" class="inno.Musician" scope="prototype">
+        <constructor-arg value="oleg"/>
+        <property name="age" value="35"/>
+    </bean>
+
+    <bean id="petr" class="inno.Musician" scope="prototype">
+        <constructor-arg value="petr"/>
+        <property name="age" value="18"/>
+        <property name="songs">
+            <list>
+                <value>Мурка</value>
+                <value>В лесу родилась</value>
+            </list>
+        </property>
+    </bean>
+
+    <!--<bean id="balalaika" class="inno.Instrument">-->
+        <!--<property name="name" value="balalaika"/>-->
+    <!--</bean>-->
+
+    <!--<bean id="guitar" class="inno.Instrument">-->
+        <!--<property name="name" value="guitar"/>-->
+    <!--</bean>-->
+
+    <bean id="singleton" class="inno.Singleton" factory-method="getInstance">
+
+    </bean>
+
+    <context:component-scan base-package="inno"/>
+
+
+    <bean class="inno.test.Film">
+        <property name="name" value="Фредди крюггер"/>
+        <qualifier value="horror"/>
+    </bean>
+
+    <bean class="inno.test.Film">
+        <property name="name" value="Пила"/>
+        <qualifier value="horror"/>
+    </bean>
+
+    <bean class="inno.test.Film">
+        <property name="name" value="Пирог"/>
+        <qualifier value="comedy"/>
+    </bean>
+
+    <bean class="inno.test.Film">
+        <property name="name" value="Евротур"/>
+        <qualifier value="comedy"/>
+    </bean>
+
+    <bean class="inno.test.Film">
+        <property name="name" value="Доярка и пастух"/>
+        <qualifier value="comedy"/>
+    </bean>
+
+</beans>
