@@ -9,4 +9,5 @@ N | Тема | Дата проведения | Кол-во пар
 04 | [Git. Maven](04. Git. Maven/plan.md) | `24.10.16 18:00` | 2
 05 | [HTTP, Servlets, Filters, Cookies, Session](05. Servlets/plan.md) | `07.11.16 18:00` | 2
 06 | [Introduction to Spring](06. Spring Context/plan.md) | `10.11.16 18:00` | 2
+07 | [Spring MVC](07. Spring MVC/plan.md) | `12.11.16 18:00` | 2
 
