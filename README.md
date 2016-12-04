@@ -17,6 +17,6 @@ N | Тема | Дата проведения | Кол-во пар
 12 | [Spring AOP](12. Spring AOP/plan.md) | `24.11.16 18:00` | 2
 13 | [Spring Security](13. Spring Security/plan.md) | `28.11.16 18:00` | 2
 14 | [Spring Security #2](14.%20Spring%20Security%20%232/plan.md) | `01.12.16 18:00` | 2
-15 | [Spring AOP](15.%20JUnit%2C%20Mockito/plan.md) | `03.12.16 18:00` | 2
+15 | [JUnit, Mockito](15.%20JUnit%2C%20Mockito/plan.md) | `03.12.16 18:00` | 2
 
 
