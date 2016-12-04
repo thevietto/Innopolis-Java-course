@@ -1,16 +1,18 @@
-# Spring AOP
+# Spring Security
 
-[Документация](http://docs.spring.io/spring/docs/current/spring-framework-reference/html/aop.html)
+[Документация](http://docs.spring.io/spring-security/site/docs/4.0.2.RELEASE/reference/htmlsingle/)
 
 ## План
-
-+ Что такое AOP
-+ Обзор Spring AOP
-+ Advice, join point, pointcut
-+ Написание простого логгера
-+ Написание аспекта для обработки исключений с использованием аннотаций и рефлексии
+###### Занятие 2
+* Шифрование пароля
+* Кастомный auth-provider
+* Защита методов
 
 
 ## Useful Links
 
-[Вики] (https://ru.wikipedia.org/wiki/%D0%90%D1%81%D0%BF%D0%B5%D0%BA%D1%82%D0%BD%D0%BE-%D0%BE%D1%80%D0%B8%D0%B5%D0%BD%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%BE%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)
+[Pre-post annotations](http://www.concretepage.com/spring/spring-security/preauthorize-postauthorize-in-spring-security)
+
+
+
+
