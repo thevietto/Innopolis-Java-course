@@ -1,0 +1,29 @@
+apply plugin: 'java'
+
+task hello(dependsOn: build) {
+    doLast {
+        println "hello"
+    }
+}
+
+repositories {
+//    maven {
+//        url: ''
+//    }
+    mavenCentral()
+}
+
+dependencies {
+    testCompile('junit:junit:4.12'){
+        exclude group: 'org.hamcrest'
+    }
+    testCompile 'org.hamcrest:hamcrest-core:1.2'
+}
+
+5.times { i ->
+    task "task${i}" {
+        doLast {
+            println ""
+        }
+    }
+}
