@@ -1,0 +1,123 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <changeSet id="1612101857_1" author="maxim">
+        <createTable tableName="users">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="email" type="varchar(256)">
+                <constraints unique="true" nullable="false"/>
+            </column>
+            <column name="password" type="varchar(256)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="name" type="varchar(256)"/>
+            <column name="surname" type="varchar(256)"/>
+        </createTable>
+    </changeSet>
+
+    <!--<changeSet id="1612101857_0" author="maxim">-->
+    <!--<sql>-->
+    <!--DROP TABLE users;-->
+    <!--</sql>-->
+    <!--<rollback changeSetId="1612101857_1" changeSetAuthor="maxim">-->
+    <!--&lt;!&ndash;<createTable tableName="">&ndash;&gt;-->
+    <!--&lt;!&ndash;<column name=""></column>&ndash;&gt;-->
+    <!--&lt;!&ndash;</createTable>&ndash;&gt;-->
+    <!--</rollback>-->
+    <!--</changeSet>-->
+
+    <changeSet id="kajbfkla" author="max" runOnChange="true">
+        <sql>SELECT 'HEllo worlasfad';</sql>
+        <rollback>
+            <sql>SELECT 'HEllo world';</sql>
+        </rollback>
+    </changeSet>
+
+
+    <changeSet id="1612101857_2" author="maxim">
+        <createTable tableName="post">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="title" type="varchar(256)"/>
+            <column name="text" type="varchar(256)"/>
+            <column name="date" type="timestamp"/>
+            <column name="user_id" type="bigint"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="1612101857_3" author="maxim">
+        <addForeignKeyConstraint baseTableName="post" baseColumnNames="user_id" constraintName="posts_users_fk"
+                                 referencedTableName="users"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+
+    <changeSet id="1612101857_4" author="maxim">
+        <createSequence sequenceName="post_seq" startValue="1" incrementBy="1"/>
+    </changeSet>
+
+    <changeSet id="1612101857_5" author="maxim">
+        <createSequence sequenceName="users_seq" startValue="1" incrementBy="1"/>
+    </changeSet>
+
+    <changeSet id="1612101857_6" author="maxim">
+        <createTable tableName="comment">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="text" type="text"/>
+            <column name="post_id" type="bigint"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="1612101857_7" author="maxim">
+        <addForeignKeyConstraint baseTableName="comment" baseColumnNames="post_id" constraintName="commet_post_fk"
+                                 referencedTableName="post"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+
+    <changeSet id="1612101857_8" author="maxim">
+        <createSequence sequenceName="comment_seq" incrementBy="1" startValue="1"/>
+    </changeSet>
+
+    <changeSet id="1612101857_9" author="maxim">
+        <createTable tableName="role">
+            <column name="id" type="bigint">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="name" type="varchar(256)"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="1612101857_10" author="maxim">
+        <createSequence sequenceName="roles_seq" startValue="1" incrementBy="1"/>
+    </changeSet>
+
+    <changeSet id="1612101857_11" author="maxim">
+        <createTable tableName="users_roles">
+            <column name="user_id" type="bigint"/>
+            <column name="role_id" type="bigint"/>
+        </createTable>
+    </changeSet>
+
+    <changeSet id="1612101857_12" author="maxim">
+        <addPrimaryKey tableName="users_roles" columnNames="user_id,role_id"/>
+    </changeSet>
+
+    <changeSet id="1612101857_13" author="maxim">
+        <addForeignKeyConstraint baseTableName="users_roles" baseColumnNames="user_id"
+                                 constraintName="users_roles_user_fk"
+                                 referencedTableName="users"
+                                 referencedColumnNames="id"/>
+        <addForeignKeyConstraint baseTableName="users_roles" baseColumnNames="role_id"
+                                 constraintName="users_roles_role_fk" referencedTableName="role"
+                                 referencedColumnNames="id"/>
+    </changeSet>
+
+</databaseChangeLog>
