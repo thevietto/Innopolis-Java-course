@@ -1,0 +1,6 @@
+ID,EMAIL,NAME,SURNAME,PASSWORD
+nextval('users_seq'),test1@test.com,test,test,$2a$04$Qk0RZE2P6Z2JVucWoq6vcOsn0YVSqluOCwZ5Kf9fIHxswu.8gZ2iW
+nextval('users_seq'),test2@test.com,test,test,$2a$04$Qk0RZE2P6Z2JVucWoq6vcOsn0YVSqluOCwZ5Kf9fIHxswu.8gZ2iW
+nextval('users_seq'),test3@test.com,test,test,$2a$04$Qk0RZE2P6Z2JVucWoq6vcOsn0YVSqluOCwZ5Kf9fIHxswu.8gZ2iW
+nextval('users_seq'),test4@test.com,test,test,$2a$04$Qk0RZE2P6Z2JVucWoq6vcOsn0YVSqluOCwZ5Kf9fIHxswu.8gZ2iW
+nextval('users_seq'),test5@test.com,test,test,$2a$04$Qk0RZE2P6Z2JVucWoq6vcOsn0YVSqluOCwZ5Kf9fIHxswu.8gZ2iW

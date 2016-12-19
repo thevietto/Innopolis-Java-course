@@ -1,0 +1,28 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+
+    <changeSet id="test_roles" author="maxim">
+        <comment>Load roles table</comment>
+        <loadUpdateData tableName="role" primaryKey="id" catalogName="${basedir}" file="src/main/resources/db/testdata/roles.csv">
+            <column name="id" type="numeric"/>
+        </loadUpdateData>
+    </changeSet>
+
+    <changeSet id="test_users" author="maxim">
+        <comment>Load users table</comment>
+        <loadUpdateData tableName="users" primaryKey="id" catalogName="${basedir}" file="src/main/resources/db/testdata/users.csv">
+            <column name="id" type="numeric"/>
+        </loadUpdateData>
+    </changeSet>
+
+    <changeSet id="test_userRoles" author="maxim">
+        <sql>
+            INSERT INTO users_roles(user_id, role_id) SELECT id,1 from users;
+        </sql>
+    </changeSet>
+
+</databaseChangeLog>
