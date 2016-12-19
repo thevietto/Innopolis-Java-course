@@ -19,5 +19,11 @@ N | Тема | Дата проведения | Кол-во пар
 14 | [Spring Security #2](14.%20Spring%20Security%20%232/plan.md) | `01.12.16 18:00` | 2
 15 | [JUnit, Mockito](15.%20JUnit%2C%20Mockito/plan.md) | `03.12.16 18:00` | 2
 16 | [Lambda, Stream API](16. Lambda, Stream API/plan.md) | `05.12.16 18:00` | 2
+17 | [Gradle](17. Gradle/plan.md) | `08.12.16 18:00` | 2
+18 | [DB migrations. Liquibase](18. DB migrations. Liquibase/plan.md) | `10.12.16 18:00` | 2
+19 | Подготовка к тесту | `12.12.16 18:00` | 2
+20 | [REST, Spring RestController, RestTemplate](20. REST/plan.md) | `15.12.16 18:00` | 2
+21 | HTML&CSS basics, FreeMarker | `17.12.16 18:00` | 2
+22 | JS basics, AJAX | `19.12.16 18:00` | 2
 
 
