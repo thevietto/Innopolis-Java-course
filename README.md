@@ -26,9 +26,4 @@ N | Тема | Дата проведения | Кол-во пар
 21 | HTML&CSS basics, FreeMarker | `17.12.16 18:00` | 2
 22 | JS basics, AJAX | `19.12.16 18:00` | 2
 
-Осталось: Паттерны проектирования, Advanced concurrency, CI, ?
-
-
-?
-
 
